@@ -36,7 +36,6 @@ export class YCombinatorPage {
       await this.page.waitForLoadState("networkidle");
     }
 
-    // add rank
     return articles.slice(0, 100).map((a, i) => ({ rank: i + 1, ...a }));
   }
 
